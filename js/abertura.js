@@ -64,12 +64,11 @@ translateSlide({position: position})
 
 const onMouseUp = (event, index)=>{
   const sliderItem = event.currentTarget
+  const pointsToMove = event.type.includes('touch')? 50 : 150
 
-  console.log(index)
-
-  if(state.movement < -150){
+  if(state.movement < -pointsToMove){
     next(index)
-  }else if(state.movement > 150){
+  }else if(state.movement > pointsToMove){
    previous(index)
   }else{
     setVisibleSlide({index:state.curentSlideIndex})
