@@ -64,7 +64,7 @@ translateSlide({position: position})
 
 const onMouseUp = (event, index)=>{
   const sliderItem = event.currentTarget
-  const pointsToMove = event.type.includes('touch')? 50 : 150
+  const pointsToMove = event.type.includes('touch')? 40 : 150
 
   if(state.movement < -pointsToMove){
     next(index)

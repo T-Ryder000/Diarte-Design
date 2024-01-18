@@ -17,7 +17,7 @@ html, body{
   height: 100%;
  user-select: none;
  -webkit-user-drag: none;
- background:#1E0775;
+ background:black;
 }
 
 li, a{
