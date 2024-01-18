@@ -98,3 +98,10 @@
       padding: 0em;
     }
   }
+
+  @media screen and (max-width: 600px){
+    .titleProjects{
+      padding: 1em;
+      font-size: 1.5em;
+    }
+  }
