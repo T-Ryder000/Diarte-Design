@@ -74,19 +74,21 @@
   }
   .servicos ul{
     height: 60%;
-    width: 60%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
   }
   .servicos h2{
+    color: #fb03bc;
     width: 100%;
     text-align: center;
     font-size: 2em;
     padding-bottom: .5em;
   }
   .servicos ul li{
+    color: white;
     font-size: 1.3em;
     width: 50%;
   
@@ -114,8 +116,29 @@
     width: 40%;
   }
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 1024px){
+    .section1{display: none;}
+    .MobileInicio{
+      display: block;
+    }
+    .slider{
+      background-color: rgb(0, 0, 0)
+    }
+    .servicos ul{
+      width: 100%;
+    }
+    .servicos ul li{
+      list-style:disc;
+    }
+    .ApButton{
+      color: #fb03bc;
+    }
+  }
 
+  @media screen and (max-width: 800px){
+    .servicos h2{
+      font-size: 1.5em;
+    }
     .servicos ul{
       width: 80%;
     }
@@ -124,12 +147,15 @@
       width: 80%;}
 
     .ProcurandoMobile{
-        width: 70%;
+        width: 60%;
      }
   }
-  @media screen and (max-width: 1024px){
-    .section1{display: none;}
-    .MobileInicio{
-      display: block;
-    }
+
+  
+  @media screen and (max-width: 650px){
+    .servicos ul li{
+      font-size: 1em;}
+      
+    .ProcurandoMobile{
+      width: 70%;}
   }

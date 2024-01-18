@@ -92,6 +92,23 @@ const onMouseLeave = (event)=>{
   sliderItem.removeEventListener('mousemove', onMouseMove)
 }
 
+function onTouchStart(event, index){
+  event.clientX = event.touches[0].clientX
+  onMouseDown(event, index )
+  const sliderItem = event.currentTarget
+  sliderItem.addEventListener('touchmove', onTouchMove)
+}
+function onTouchMove(event){
+  event.clientX = event.touches[0].clientX
+  onMouseMove(event)
+}
+function onTouchEnd(event, index){
+  onMouseUp(event, index)
+  const sliderItem = event.currentTarget
+  sliderItem.addEventListener('touchmove', onTouchMove)
+}
+
+
 sliderItems.forEach((sliderItem, index)=>{
 
   sliderItem.addEventListener('dragstart', function(event){
@@ -99,8 +116,16 @@ sliderItems.forEach((sliderItem, index)=>{
   })
 
   sliderItem.addEventListener('mousedown', function(event){onMouseDown(event, index)} )
-  sliderItem.addEventListener('mouseup', function(event){onMouseUp(event, index)} )
+  sliderItem.addEventListener('mouseup', function(event){
+    onMouseUp(event, index)} )
   sliderItem.addEventListener('mouseleave', onMouseLeave)
+
+  sliderItem.addEventListener('touchstart',function(event){
+     onTouchStart(event, index)})
+
+  sliderItem.addEventListener('touchend', function(event){
+    onTouchEnd(event, index)
+  })
 
 })
 

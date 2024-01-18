@@ -54,6 +54,7 @@ cursor: pointer;
   .TxtContato h1{ font-size: 1.5em;}
   .inputsContato h2{ font-size: 1em;}
 }
+
 @media screen and (max-width: 700px) {
 
   #contato{
@@ -62,6 +63,16 @@ cursor: pointer;
   .TxtContato{
     width: 100%;
   }
+  .inputsContato{
+    margin-top: 2em;
+    width: 70%;
+  }
+  .inputsContato input{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
   .inputsContato{
     width: 100%;
   }
