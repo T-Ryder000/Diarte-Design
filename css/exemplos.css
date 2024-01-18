@@ -36,6 +36,11 @@
   text-align: center;
   font-weight: bold;
 }
+.ShowCenter{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .tela{
   display: none;
   transition: 0.3s;

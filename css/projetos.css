@@ -22,31 +22,38 @@
 }
   
 
+
 /*classe item e largura*/
 .Mobileitem{
-  border: 1px solid   #fb03bc;
+  display: flex;
+  justify-content: center;
   width: 80vw;
   height: 25vw;
   border-radius: 1em;
+  padding: 0 1em;
+  cursor: pointer;
+}
+.capsula{
+  border-radius: 1em;
+  width: 80vw;
+  height: 25vw;
   display: flex;
   gap: 1em;
   justify-content: center;
+  align-items: center;
   object-fit: cover;
-  padding: 2em;
-  cursor: pointer;
 }
- 
-.Mobileitem img{
+.capsula img{
   border-radius: 1em;
   object-fit: cover;
   width: auto;
   height: 100%;
 }
 
-.Mobileitem .p1{
+.capsula .p1{
   padding: 0.5em;
   font-size: 1.1em;
-  width: 70%;
+  width: 50%;
   color: white;}
 
   .p2{
@@ -85,18 +92,44 @@
     
     .Mobileitem{
       padding: 0.5em;
+      display:flex;
+      align-items: center;
+    }
+    .capsula img{
+      display: none;
     }
     .p1{
       display: none;
     }
     .p2{
       display: block;
+      height: 3.5em;
+      font-size: 2.5rem;
+      width: 100%;
     }
 
     .ProjectButton{
       height: auto;
       padding: 0em;
     }
+
+  
+
+  [capsula-index = '3'], [capsula-index = '-1']{
+    background-image: url(../imgProjectsFundo/pizza.jpg);
+  }
+
+  [capsula-index = '0'], [capsula-index = '4']{
+    background-image: url(../imgProjectsFundo/hamburgueria.jpg);
+  }
+
+  [capsula-index = '1'],[capsula-index = '5']{
+    background-image: url(../imgProjectsFundo/estampas.jpg);
+  }
+
+  [capsula-index = '-2'], [capsula-index = '2']{
+    background-image: url(../imgProjectsFundo/hip\ hop.jpg);
+  }
   }
 
   @media screen and (max-width: 600px){
