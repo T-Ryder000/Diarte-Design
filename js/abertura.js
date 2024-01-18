@@ -126,6 +126,14 @@ sliderItems.forEach((sliderItem, index)=>{
     onTouchEnd(event, index)
   })
 
+  let resizeTimeOut;
+  window.addEventListener('resize', function(){
+     clearTimeout(resizeTimeOut)
+     resizeTimeOut = setTimeout(function(){
+        setVisibleSlide({index:state.curentSlideIndex})
+     }, 300)
+  })
+
 })
 
 function buttonNext(){

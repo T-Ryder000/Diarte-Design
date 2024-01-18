@@ -145,7 +145,6 @@ function setListeners(){
       resizeTimeOut = setTimeout(function(){
         setVisibleSlide({index : state.curentSlideIndex, animate: true})
       }, 300)
-
     })
   
   })
