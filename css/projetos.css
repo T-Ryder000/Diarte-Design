@@ -1,6 +1,12 @@
 /* .MobileProjects{
   height: 30vw;
 } */
+.titleProjects{
+  background-color: black;
+  color: #fb03bc;
+  text-align: center;
+  padding: 2em;
+}
 .wrapperProjects{
   width: 100%;
   position: relative;
