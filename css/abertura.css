@@ -1,0 +1,135 @@
+
+.section1{
+  margin-top: 5em;
+  height:75%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+  background-color: #190242;
+}
+
+.tit1{
+  color: #fb03bc;
+}
+.tit2{
+  color: white;
+}
+.Servicos{
+  width: 100%;
+  color: #fb03bc;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+.Servicos ul{
+  width: 100%;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.Servicos ul li{
+  width: 100%;
+  font-size: 1.2em;
+  color: white;
+  transition: 0.2s;
+}
+.Servicos ul li:hover{
+  cursor: pointer;
+  color: #fb03bc;
+}
+
+.Procurando{
+  width: 500px;
+  position: relative;
+  top: -25px;
+}
+/********************************************************************/
+
+.MobileInicio{
+  margin-top: 5em;
+  display: none;
+}
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  }
+  .slider{
+    display: flex;
+    /* background-color: blueviolet; */
+    background-color: #3a009c;
+  }
+  
+  .servicos{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .servicos ul{
+    height: 60%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .servicos h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: .5em;
+  }
+  .servicos ul li{
+    font-size: 1.3em;
+    width: 50%;
+  
+  }
+  .imagem{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-shrink: 0;
+  }
+  
+  .ApButton{
+    position: absolute;
+    z-index: 5;
+    font-size: 2em;
+  }
+  #apLeft{
+  left: 20px;
+  }
+  #apRight{
+  right: 20px;
+  }
+  
+  .ProcurandoMobile{
+    width: 40%;
+  }
+
+  @media screen and (max-width: 800px){
+
+    .servicos ul{
+      width: 80%;
+    }
+    .servicos ul li{
+      font-size: 1.3em;
+      width: 80%;}
+
+    .ProcurandoMobile{
+        width: 70%;
+     }
+  }
+  @media screen and (max-width: 1024px){
+    .section1{display: none;}
+    .MobileInicio{
+      display: block;
+    }
+  }

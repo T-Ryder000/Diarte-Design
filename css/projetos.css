@@ -1,0 +1,94 @@
+/* .MobileProjects{
+  height: 30vw;
+} */
+.wrapperProjects{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+ background-color: black; 
+  }
+
+.sliderProjects{
+  display: flex;
+  padding: 2em 0;
+}
+  
+
+/*classe item e largura*/
+.Mobileitem{
+  border: 1px solid   #fb03bc;
+  width: 80vw;
+  height: 25vw;
+  border-radius: 1em;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  object-fit: cover;
+  padding: 2em;
+  cursor: pointer;
+}
+ 
+.Mobileitem img{
+  border-radius: 1em;
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+
+.Mobileitem .p1{
+  padding: 0.5em;
+  font-size: 1.1em;
+  width: 70%;
+  color: white;}
+
+  .p2{
+    display: none;
+    width: 50%;
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+    transform: translateY(30%);
+  }
+
+  .ProjectButton{
+    position: absolute;
+    color: #fb03bc;
+    font-size: 3em;
+    z-index: 5;
+    padding: 1em;
+    height: 100%;
+    padding-top: 15%;
+    cursor: pointer;
+  }
+  #ProjectLeft{
+  left: 10px;
+  }
+  #ProjectRight{
+  right: 10px;
+  }
+
+  @media screen and (max-width: 1100px){
+    .Mobileitem .p1{
+      font-size: 0.9em;
+    }
+  }
+
+  @media screen and (max-width: 900px){
+    
+    .Mobileitem{
+      padding: 0.5em;
+    }
+    .p1{
+      display: none;
+    }
+    .p2{
+      display: block;
+    }
+
+    .ProjectButton{
+      height: auto;
+      padding: 0em;
+    }
+  }

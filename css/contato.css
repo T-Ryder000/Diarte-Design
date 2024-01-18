@@ -1,0 +1,68 @@
+
+#contato{
+  z-index: 1;
+  /* background-color: #0b0124; */
+  background-color: black;
+  color: #fb03bc;
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+  padding: 5%;
+  gap: 20px;
+}
+.TxtContato{
+  width: 35%;
+}
+.TxtContato h1{
+  margin-bottom: 20px;
+}
+.TxtContato p{
+  font-size: 1.1em;
+  color: white;
+}
+.inputsContato{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 20px;
+}
+.inputsContato input{
+  padding: 10px;
+  max-width: 400px;
+}
+.NumberContato{
+  color: #fb03bc;
+}
+.inputsContato button{
+border: none;
+font-size: 1.5em;
+margin-left:auto;
+border-radius: 50%;
+padding: 10px;
+cursor: pointer;
+}
+.inputsContato button:hover{
+  background-color: #fb03bc;
+  color: black;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  .TxtContato p{
+    font-size: 0.8em;
+  }
+  .TxtContato h1{ font-size: 1.5em;}
+  .inputsContato h2{ font-size: 1em;}
+}
+@media screen and (max-width: 700px) {
+
+  #contato{
+    flex-direction: column;
+  }
+  .TxtContato{
+    width: 100%;
+  }
+  .inputsContato{
+    width: 100%;
+  }
+}
