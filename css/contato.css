@@ -52,33 +52,60 @@ cursor: pointer;
   transition: 0.3s;
 }
 
+#BtnFormMobile{
+  display: none;
+  border-radius: 5px;
+  width: 50%;
+  background-color: #fb03bc;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 4em;
+  margin-left:0;
+}
+
 @media screen and (max-width: 1024px) {
   .TxtContato p{
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
   .TxtContato h1{ font-size: 1.5em;}
   .inputsContato h2{ font-size: 1em;}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1150px) {
 
   #contato{
+    margin-top: 4em;
     flex-direction: column;
   }
+  .TxtContato{
+    width: 80%;
+  }
+  
+  .inputsContato{
+    margin-top: 2em;
+    width: 80%;
+  }
+
+  #BtnFormMobile{
+    display: block;
+  }
+  #BtnFormulario{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .TxtContato{
     width: 100%;
   }
   .inputsContato{
-    margin-top: 2em;
-    width: 70%;
+    width: 100%;
   }
   .inputsContato input{
     max-width: 100%;
   }
-}
-
-@media screen and (max-width: 500px) {
-  .inputsContato{
+  #BtnFormMobile{
     width: 100%;
   }
+
 }

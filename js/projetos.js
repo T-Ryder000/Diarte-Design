@@ -1,5 +1,7 @@
 export default function projects(){
 
+let backgroundSlider = document.querySelector('.wrapperProjects')
+
 let slider = document.querySelector('.sliderProjects')
 let sliderItems = document.querySelectorAll('[data-slide="ProjectItem"]')
 let BtnPrevious = document.querySelector('#ProjectLeft')
@@ -28,6 +30,8 @@ function getCenterPosition({index}){
   return position
 }
 function setVisibleSlide({index, animate}){
+
+
   if(index === 0 || index === sliderItems.length - 1){
     index =  state.curentSlideIndex
   }
@@ -46,6 +50,7 @@ function previous(){
 }
 
 const onMouseDown = (event, index)=>{
+  
 const sliderItem = event.currentTarget
 state.startingPoint = event.clientX
 state.curentPoint = event.clientX - state.savedPosition
