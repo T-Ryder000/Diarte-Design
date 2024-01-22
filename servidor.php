@@ -9,7 +9,7 @@ require './PHPMailer-master/src/SMTP.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verifica campos obrigatórios
     if (empty($_POST["Email"]) || empty($_POST["Whatsapp"])) {
-        header('Location:http://localhost:8000/');
+        header('Location:https://ldiartedesigner.netlify.app/');
         exit();
         echo "<script>console.log('Por favor, preencha todos os campos obrigatórios.')</script>";
     }
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         
         // Redireciona para a página inicial após o envio do e-mail
-        header('Location:http://localhost:8000/');
+        header('Location:https://ldiartedesigner.netlify.app/');
         exit(); // Certifique-se de incluir a chamada exit para interromper a execução do script após o redirecionamento
 
     } catch (Exception $e) {
