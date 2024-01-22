@@ -14,10 +14,11 @@
   width: 35%;
 }
 .TxtContato h1{
+  font-size: 1.5em;
   margin-bottom: 20px;
 }
 .TxtContato p{
-  font-size: 1.1em;
+  font-size: 1em;
   color: white;
 }
 .inputsContato{
@@ -25,6 +26,10 @@
   flex-direction: column;
   width: 30%;
   gap: 20px;
+}
+
+.inputsContato h2{
+  font-size: 1.5em;
 }
 .inputsContato input{
   padding: 10px;
