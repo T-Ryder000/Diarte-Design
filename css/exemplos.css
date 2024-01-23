@@ -12,7 +12,7 @@
 }
 .Exemplos div{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   object-fit: cover;
 }
@@ -70,12 +70,23 @@
 .telaImg img{
   width: 100%;
 }
+.esc{
+  width: 95%;
+}
+.esc i{
+  float: right;
+  font-size: 2em;
+  color: #fb03bc;
+  cursor: pointer;
+}
+
 .telaText{
 text-align: center;
 padding: 5%;
 }
 .telaContato{
 text-align: center;
+padding: 5%;
 }
 
 .telaContato span a{
@@ -129,11 +140,14 @@ text-align: center;
     gap: 3em;
   }
   .contMobile img{
+    transition: all 0.3s;
     width: 35%;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 8px black;
     cursor: pointer;
+    object-fit: cover;
+    background: rgba(0, 0, 0, 0.192);
   }
 
 }
