@@ -1,12 +1,13 @@
 import abertura from "./js/abertura.js";
 import exemplos from "./js/exemplos.js";
 import projects from "./js/projetos.js";
-
+import formulario from "./js/form.js";
 
 
 abertura()
 exemplos()
 projects()
+formulario()
 
 
 

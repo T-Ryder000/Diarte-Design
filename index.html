@@ -285,13 +285,13 @@
       Atenciosamente, Diarte</p>
     </div>
 
-  <form action="/" method="POST" class="inputsContato" name="formulario-login" netlify>
+  <form action="/" onsubmit="return validarFormulario()" method="POST" class="inputsContato" name="formulario-login" netlify>
     <h2>Deixe seu email e WhatsApp para que possamos entrar em contato!</h2>
 
-    <input type="email" placeholder="EMAIL" id="InputEmail" name="Email">
-    <input type="text" placeholder="WhatsApp" id="inputWhatsapp" name="Whatsapp">
+    <input type="email" placeholder="EMAIL" id="InputEmail" name="Email" required>
+    <input type="text" placeholder="WhatsApp" id="inputWhatsapp" name="Whatsapp" required>
     <button id="BtnFormulario" class="fa-solid fa-arrow-right-long"></button>
-    <button id="BtnFormMobile"> Enviar</button>
+    <button id="BtnFormMobile">Enviar</button>
   </form>
 
   </div>
