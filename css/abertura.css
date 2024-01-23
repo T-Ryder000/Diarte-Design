@@ -41,6 +41,7 @@
 }
 
 .Procurando{
+  object-fit: cover;
   width: 520px;
   position: relative;
   top: -25px;
@@ -98,6 +99,7 @@
     justify-content: center;
     width: 100vw;
     flex-shrink: 0;
+    object-fit: cover;
   }
   
   .ApButton{
@@ -115,6 +117,7 @@
   
   .ProcurandoMobile{
     width: 40%;
+    object-fit: cover;
   }
 
   @media screen and (max-width: 1024px){

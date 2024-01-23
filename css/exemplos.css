@@ -18,6 +18,7 @@
 }
 
 .Exemplos div img{
+  object-fit: cover;
   width: calc(100%/6);
   border: 2px solid black;
   border-radius: 5px;
@@ -69,6 +70,7 @@
 
 .telaImg img{
   width: 100%;
+  object-fit: cover;
 }
 .esc{
   width: 95%;
