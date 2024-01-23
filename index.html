@@ -287,9 +287,12 @@
 
   <form action="/" onsubmit="return validarFormulario()" method="POST" class="inputsContato" name="formulario-login" netlify>
     <h2>Deixe seu email e WhatsApp para que possamos entrar em contato!</h2>
-
-    <input type="email" placeholder="EMAIL" id="InputEmail" name="Email" required>
-    <input type="text" placeholder="WhatsApp" id="inputWhatsapp" name="Whatsapp" required>
+    <label for="email">Email:</label>
+    <input type="email" placeholder="DIGITE SEU EMAIL" id="InputEmail" name="Email" required>
+    <label for="whatsapp">Whatsapp:</label>
+    <input type="text" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="NUMERO DO WHATSAPP" 
+    id="inputWhatsapp" name="Whatsapp" required>
+  
     <button id="BtnFormulario" class="fa-solid fa-arrow-right-long"></button>
     <button id="BtnFormMobile">Enviar</button>
   </form>

@@ -35,6 +35,11 @@
   padding: 10px;
   max-width: 400px;
 }
+/* .inputsContato input::-webkit-outer-spin-button, 
+.inputsContato input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
 .NumberContato{
   color: #fb03bc;
 }
